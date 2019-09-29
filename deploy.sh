@@ -16,10 +16,10 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 끝퇼⑥ https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+# 끝퇼⑥  https://github.com/blakehunag/vuerouter.git
+# git push -f  https://github.com/blakehunag/vuerouter.git master
 
 # 끝퇼⑥ https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+git push -f  https://github.com/blakehunag/vuerouter.git master:gh-pages
 
 cd -
