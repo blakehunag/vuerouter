@@ -10,7 +10,7 @@ import Note from '../components/Note'
 Vue.use(VueRouter);
 
 export default new VueRouter({
-  mode: 'history',
+  //mode: 'history',
   //url後面不會有#號 例如未造訪過的url 無法直接透過完整url連結過去 local端是不會有問題  需要後台設置處理 
   //https://router.vuejs.org/zh/guide/essentials/history-mode.html#%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%BE%8B%E5%AD%90
   routes: [{
