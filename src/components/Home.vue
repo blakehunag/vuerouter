@@ -1,6 +1,11 @@
 <template>
 <div class="Home">
     <h1>{{ msg }}</h1>
+     <div class='block'>
+      <p>透過vuex store更改接受值</p>
+      <vuex-result></vuex-result>
+      <vuex-counter></vuex-counter>
+    </div>
     <div class='block'>
       <axios-practice></axios-practice>
     </div>
@@ -49,6 +54,8 @@ import componentA from './dynamic_components/A.vue';
 import componentB from './dynamic_components/B.vue';
 import componentC from './dynamic_components/C.vue';
 import axiosPractice from './axiosPractice.vue';
+import vuexCounter from './vuex_practice_components/Counter';
+import vuexResult from './vuex_practice_components/Result';
 
 export default {
     name: 'Home',
@@ -66,7 +73,9 @@ export default {
         'A': componentA,
         'B': componentB,
         'C': componentC,
-        'axios-practice' : axiosPractice
+        'axios-practice' : axiosPractice,
+        'vuex-counter':vuexCounter,
+        'vuex-result':vuexResult
     }
 }
 </script>
