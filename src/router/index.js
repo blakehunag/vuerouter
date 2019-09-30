@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from "vue-router";
 import Home from '../components/Home'
 import DynamicRoute from '../components/DynamicRoute'
+import DynamicRoute2 from '../components/DynamicRoute2'
 import ParentNode from '../components/ParentNode'
 import ChildNode from '../components/ChildNode'
 import ChildNode2 from '../components/ChildNode2'
@@ -11,7 +12,7 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
   //mode: 'history',
-  //url«á­±¤£·|¦³#¸¹ ¨Ò¦p¥¼³y³X¹Lªºurl µLªkª½±µ³z¹L§¹¾ãurl³sµ²¹L¥h localºİ¬O¤£·|¦³°İÃD  »İ­n«á¥x³]¸m³B²z 
+  //urlå¾Œé¢ä¸æœƒæœ‰#è™Ÿ ä¾‹å¦‚æœªé€ è¨ªéçš„url ç„¡æ³•ç›´æ¥é€éå®Œæ•´urlé€£çµéå» localç«¯æ˜¯ä¸æœƒæœ‰å•é¡Œ  éœ€è¦å¾Œå°è¨­ç½®è™•ç† 
   //https://router.vuejs.org/zh/guide/essentials/history-mode.html#%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%BE%8B%E5%AD%90
   routes: [{
       path: "/",
@@ -20,9 +21,13 @@ export default new VueRouter({
     },
     {
       path: '/DynamicRoute/:id/',
-      // path: '/DynamicRoute/:id/',
       name: 'DynamicRoute',
       component: DynamicRoute
+    },
+    {
+      path: '/DynamicRoute2/',
+      name: 'DynamicRoute2',
+      component: DynamicRoute2
     },
     {
       path: '/ParentNode',

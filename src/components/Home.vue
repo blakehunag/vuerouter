@@ -13,10 +13,10 @@
         <ul>
             <router-link tag="li" v-bind:to="{name : 'ParentNode'}">嵌套路由 Nested Routes</router-link>
             <router-link tag="li" to="/DynamicRoute/Page1">動態路由 Dynamic Route</router-link>
-            <router-link tag="li" :to="{name:'DynamicRoute', params:{id:requestPara}}">動態路由 Dynamic Route 2</router-link>
+            <router-link tag="li" :to="{name:'DynamicRoute2', params:{id:requestPara}}">動態路由2 Dynamic Route 2</router-link>
         </ul>
         <div style='background-color:grey; width:50%; margin:1% 25%; color:white'>
-            to 帶上參數的方式 可以讓DynamicRoute.vue的路由設定 捨略/DynamicRoute/:id/ id的部分
+            動態路由2 :to帶上params的方式 可以讓DynamicRoute.vue的路由設定 捨略/DynamicRoute/:id/ id的部分
             <br>
             如此一來可以避面url上面有參數的痕跡
         </div>
