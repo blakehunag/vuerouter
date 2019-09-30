@@ -1,11 +1,12 @@
 <template>
   <div class="hello">
-     I'm ChildNode
-    
+     I'm ChildNode <br>
+     query parameter : {{this.$route.query.para1 }}
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'CHildNode',
   data () {

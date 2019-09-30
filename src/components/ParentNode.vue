@@ -2,13 +2,13 @@
 <div class="block">
     ParentNode
     <br><br>
-    <router-link to="/ParentNode/ChildNode" tag="li">router-link to Display ChildNode</router-link>
+    <router-link to="/ParentNode/ChildNode?para1=123" tag="li">router-link to Display ChildNode</router-link>
 
     <br><br>
     <router-link to="/ParentNode/ChildNode2" tag="li">router-link to Display ChildNode2</router-link>
     <br><br>
-    <button type='button' @click='goToChildNode'>编程式的导航 to Display ChildNode</button>
-
+    <button type='button' class='btn btn-primary' @click='goToChildNode'>编程式的导航 to Display ChildNode</button>
+    <br><br>
     <router-view></router-view>
     <br><br>
 
@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         goToChildNode() {
-            this.$router.push('/ParentNode/ChildNode').catch(err => {}); //重複倒向同頁面時會報錯 NavigationDuplicated 
+            this.$router.push({path:'/ParentNode/ChildNode', query:{para1:'abc'}}).catch(err => {}); //重複倒向同頁面時會報錯 NavigationDuplicated 
         }
     },
 }

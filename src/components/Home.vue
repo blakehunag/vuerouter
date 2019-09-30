@@ -44,6 +44,9 @@
             <!--</app-quote>-->
         </div>
     </div>
+    <div class='block'>
+        <router-link tag="button" class='btn btn-primary' v-bind:to="{name : 'BeforeLeave'}">beforeRouterLeave</router-link>
+    </div>
     <router-link tag="li" to="/Note">Note</router-link>
 </div>
 </template>
@@ -75,7 +78,7 @@ export default {
         'C': componentC,
         'axios-practice' : axiosPractice,
         'vuex-counter':vuexCounter,
-        'vuex-result':vuexResult
+        'vuex-result':vuexResult,
     }
 }
 </script>

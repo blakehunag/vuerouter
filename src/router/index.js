@@ -8,6 +8,8 @@ import ChildNode from '../components/ChildNode'
 import ChildNode2 from '../components/ChildNode2'
 import Notfound404 from '../components/Notfound'
 import Note from '../components/Note'
+import BeforeLeave from '../components/BeforeLeave';
+
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -45,6 +47,11 @@ export default new VueRouter({
     {
       path: '/Note',
       component: Note
+    },
+    {
+      path: '/BeforeLeave',
+      component: BeforeLeave,
+      name: 'BeforeLeave',
     },
     {
       path: '*',
