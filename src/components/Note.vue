@@ -2,6 +2,7 @@
   <div class="block">
     兩個組建之前傳直可參考eventBus方式，或透過vuex
     約略方式為多new Vue()一個instant 並讓原本Vue的實例在onCreate時監聽事件
+    test branch
   </div>
 </template>
 
