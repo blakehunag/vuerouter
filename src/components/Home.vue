@@ -79,7 +79,36 @@ export default {
         'axios-practice' : axiosPractice,
         'vuex-counter':vuexCounter,
         'vuex-result':vuexResult,
+    },
+    metaInfo: {
+    title: "1212白吃貓日",
+    meta: [
+      {
+        property: "og:image",
+        content: "https://api.maobc.com.tw:8443/static/img/1212banner.png"
+      },
+      {
+        property: "og:url",
+        content: "https://api.maobc.com.tw:8443/#/banner/1212banner"
+      },
+      {
+        property: "og:type",
+        content: "article"
+      },
+      {
+        property: "og:title",
+        content: "1212白吃貓日"
+      },
+      {
+        property: "og:description",
+        content: "1212白吃貓日"
+      }
+    ],
+    htmlAttrs: {
+      xmlns: "www.w3.org/1999/xhtml",
+      "xmlns:fb": "http://www.facebook.com/2008/fbml"
     }
+  }
 }
 </script>
 
